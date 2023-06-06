@@ -1,7 +1,7 @@
-
 <?php
 require_once './config/config.php';
 require_once './config/db.php';
+
 // Check for Submit
 if (isset($_POST['submit'])) {
   // Get form data
@@ -47,7 +47,6 @@ mysqli_free_result($result);
 // Close connection
 mysqli_close($conn);
 ?>
-
 <?php include('./views/header.php'); ?>
 <h1 class="text-center">Edit Post</h1>
 <div class="container">
